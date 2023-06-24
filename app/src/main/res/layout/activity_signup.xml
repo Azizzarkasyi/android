@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".login">
+
+
+    <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:layout_marginTop="180dp"
+            android:hint="email"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:drawablePadding="12dp"
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/ic_email"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:id="@+id/email"/>
+    <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/email"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:hint="Username"
+            android:background="@drawable/border"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:id="@+id/usernamesign" android:layout_marginTop="20dp" android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" android:layout_marginBottom="20dp"/>
+
+    <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+           android:layout_below="@+id/usernamesign"
+            android:hint="password"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:drawablePadding="12dp"
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/ic_lock"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:id="@+id/passwordsign"/>
+    <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:layout_below="@+id/passwordsign"
+            android:layout_margin="20dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:hint="confirm password"
+            android:background="@drawable/border"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:id="@+id/confirmpassword"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/confirmpassword"
+            android:background="@drawable/button"
+            android:layout_centerHorizontal="true"
+            android:text="sign"
+            android:id="@+id/bt2"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Sudah punya akun?"
+              android:layout_below="@+id/bt2"
+              android:layout_marginStart="120dp"
+              android:id="@+id/sugest2"
+    />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/sugest2"
+              android:layout_below="@+id/bt2"
+              android:text="Login"
+              android:id="@+id/tologin"
+              android:textColor="@android:color/holo_blue_light"
+              android:layout_centerHorizontal="true"/>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
